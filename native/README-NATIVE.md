@@ -13,11 +13,58 @@ TODO
 
 ### Screen 2 - Adventure List
 
-TODO
+```
+  {
+    adventureList {
+      items {
+        _path
+        adventureTitle
+        adventureDescription {
+          html
+        }
+        adventurePrimaryImage {
+          ... on ImageRef {
+            _path
+            width
+            height
+          }
+        }
+      }
+    }
+  }
+```
+
+TODO:
+* [] Page title: WKND Adventures
+* [] Hero image
+* [] Sub heading: Our Adventures
 
 ### Screen 3
 
-TODO
+```
+  {
+    adventureList {
+      items {
+        _path
+        adventureTitle
+        adventureDescription {
+          html
+        }
+        adventurePrimaryImage {
+          ... on ImageRef {
+            _path
+            width
+            height
+          }
+        }
+      }
+    }
+  }
+```
+
+TODO:
+* [] Event List
+  * [] Event
 
 ## Persisted Queries
 
