@@ -12,7 +12,7 @@
 
 ## GraphQL Queries
 
-### Screen 1
+### Screen 1 - Home
 
 The home screen consists of a single GraphQL query that searches across two Content Fragment Models:
 
@@ -80,7 +80,7 @@ The home screen consists of a single GraphQL query that searches across two Cont
 * Hero image is re-used from the home page query (i.e. `app.appHeroImage`)
 * Sub heading, _Our Adventures_, is hard coded in the app.
 
-### Screen 3: Detail Page
+### Screen 3 - Detail Page
 
 The detail page uses a _ByPath_ query and supports a path variable.
 
@@ -117,31 +117,22 @@ TODO:
 
 ## Persisted Queries
 
-### Screen 1
+### Screen 1 - Home
 
+```
 TODO
+```
 
 ### Screen 2 - Adventure List
 
-An out of the box PQ is included that contains some of the required page data. 
+An out of the box PQ is included that contains most of the required page data. The same assumptions used in the GraphQL section apply here.
 
 ```
 $ curl -u admin:admin http://localhost:4502/graphql/execute.json/wknd/adventures-all
 ```
 
-The following fields are missing:
-
-1. Page title: WKND Adventures
-2. Hero image
-3. Sub heading: Our Adventures
-4. Adventure description
-
-To help close the gaps the following PQ is used.
+### Screen 3 - Detail Page
 
 ```
 TODO
 ```
-
-### Screen 3 - Adventure Title
-
-TODO
