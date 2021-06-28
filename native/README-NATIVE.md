@@ -9,7 +9,28 @@
 
 ### Screen 1
 
-TODO
+The home screen consists of a single GraphQL query that searches across two Content Fragment Models:
+
+1. App model
+2. Adventure model
+
+```
+  {
+    appByPath (_path: "/content/dam/wknd/en/app/wknd-adventures") {
+      item {
+        _path
+        appTitle
+        appHeroImage {
+          ... on ImageRef {
+            _path
+            width
+            height
+          }
+        }
+      }
+    }
+  }
+```
 
 ### Screen 2 - Adventure List
 
