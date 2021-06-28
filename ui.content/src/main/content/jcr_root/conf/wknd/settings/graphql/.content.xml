@@ -11,5 +11,32 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="graphql/persistent/query/content"/>
         </adventures-all>
+        <native-app-home
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="graphql/persistent/query">
+            <jcr:content
+                jcr:data="{Binary}"
+                jcr:mimeType="text/html"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="graphql/persistent/query/content"/>
+        </native-app-home>
+        <native-app-adventures
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="graphql/persistent/query">
+            <jcr:content
+                jcr:data="{Binary}"
+                jcr:mimeType="text/html"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="graphql/persistent/query/content"/>
+        </native-app-adventures>
+        <native-app-adventure
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="graphql/persistent/query">
+            <jcr:content
+                jcr:data="{Binary}"
+                jcr:mimeType="text/html"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="graphql/persistent/query/content"/>
+        </native-app-adventure>
     </persistentQueries>
 </jcr:root>
