@@ -15,21 +15,36 @@ The home screen consists of a single GraphQL query that searches across two Cont
 2. Adventure model
 
 ```
-  {
-    appByPath (_path: "/content/dam/wknd/en/app/wknd-adventures") {
-      item {
-        _path
-        appTitle
-        appHeroImage {
-          ... on ImageRef {
-            _path
-            width
-            height
-          }
+{
+  appByPath(_path: "/content/dam/wknd/en/app/wknd-adventures") {
+    item {
+      _path
+      appTitle
+      appHeroImage {
+        ... on ImageRef {
+          _path
+          width
+          height
         }
       }
     }
   }
+  adventureList(
+    filter: {tags: {_expressions: [{value: "wknd:customer-journey/attract", _operator: EQUALS}]}}
+  ) {
+    items {
+      _path
+      adventureTitle
+      adventurePrimaryImage {
+        ... on ImageRef {
+          _path
+          width
+          height
+        }
+      }
+    }
+  }
+}
 ```
 
 ### Screen 2 - Adventure List

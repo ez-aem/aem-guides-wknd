@@ -8,25 +8,24 @@
         cq:name="downhill-skiing-wyoming"
         cq:parentPath="/content/dam/wknd/en/adventures/downhill-skiing-wyoming"
         jcr:description=""
-        jcr:lastModified="{Date}2020-10-15T11:59:54.085-07:00"
+        jcr:lastModified="{Date}2021-06-28T10:23:01.780-07:00"
         jcr:lastModifiedBy="admin"
         jcr:primaryType="dam:AssetContent"
         jcr:title="Downhill Skiing Wyoming"
         contentFragment="{Boolean}true"
-        lastFragmentSave="{Date}2020-10-15T11:59:54.085-07:00">
+        lastFragmentSave="{Date}2021-06-28T10:23:01.780-07:00">
         <data
             cq:model="/conf/wknd/settings/dam/cfm/models/adventure"
             jcr:primaryType="nt:unstructured">
             <master
-                jcr:mixinTypes="[cq:Taggable]"
+                cq:tags="[wknd:customer-journey/attract]"
+                jcr:mixinTypes="[cq:Taggable,dam:cfVariationNode]"
                 jcr:primaryType="nt:unstructured"
-                adventureActivity="Skiing"
-                adventureActivity_x0040_LastModified="{Date}2020-10-15T11:59:54.068-07:00"
+                adventureActivity_x0040_LastModified="{Date}2021-06-28T10:23:01.684-07:00"
                 adventureDescription="&lt;h2>Experience wild untamed, rolling, wide-open terrain of Wyoming in the winter.&lt;br>&#xa;&lt;/h2>&#xa;&lt;p>The spectacular Tetons of Wyoming provide a wonderous backdrop for your Jackson Hole ski vacation.&amp;nbsp; Jackson Hole is unlike anywhere else in the US.&amp;nbsp; A skiers paradise far from crowds and close to nature with terrain so vast it appears uncharted.&amp;nbsp; With 2,500 acres of legendary terrain, unmatched levels of snowfall each winter, and unparalleled backcountry access, Jackson Hole offers a truly unique skiing experience.&lt;/p>&#xa;"
                 adventureDescription_x0040_ContentType="text/html"
                 adventureDescription_x0040_LastModified="{Date}2020-10-15T11:59:54.067-07:00"
-                adventureDifficulty="Intermediate"
-                adventureDifficulty_x0040_LastModified="{Date}2020-10-15T11:59:54.069-07:00"
+                adventureDifficulty_x0040_LastModified="{Date}2021-06-28T10:23:01.684-07:00"
                 adventureGearList="&lt;p>We'll provide the ski gear, but feel free to bring your own.&lt;/p>&#xa;&lt;p>Ski &amp;amp; Snowboard Clothing&lt;/p>&#xa;&lt;ul>&#xa;&lt;li>Jacket – 1 – 3 waterproof ski jackets&lt;/li>&#xa;&lt;li>Pants – 1 – 3 waterproof ski pants&lt;/li>&#xa;&lt;li>Snowsuits – 1 – 2 waterproof snowsuits&lt;/li>&#xa;&lt;li>Additional insulation – down or fleece vest&lt;/li>&#xa;&lt;li>Base Layer Tops – 1 -4 non-cotton base layer tops&lt;/li>&#xa;&lt;li>Base Layer Bottoms – 1 – 4 non-cotton base layer bottoms&lt;/li>&#xa;&lt;li>Gloves &amp;amp; Mittens – waterproof and insulated ski gloves or mittens&lt;/li>&#xa;&lt;li>Sweaters – 1 – 4 fleece or wool sweaters&lt;/li>&#xa;&lt;li>Warm winter hat&lt;/li>&#xa;&lt;li>Socks – 3 – 4 wool ski socks&lt;/li>&#xa;&lt;li>Neck Gaiter – non-cotton balaclava or ski mask&lt;/li>&#xa;&lt;/ul>&#xa;&lt;p>Tip: Remember to pack lots of warm layers, as the weather conditions on the mountains can change quickly and dramatically.&lt;/p>&#xa;"
                 adventureGearList_x0040_ContentType="text/html"
                 adventureGearList_x0040_LastModified="{Date}2020-10-15T11:59:54.070-07:00"
@@ -43,8 +42,9 @@
                 adventureTitle_x0040_LastModified="{Date}2020-10-15T11:59:54.067-07:00"
                 adventureTripLength="2-3 days"
                 adventureTripLength_x0040_LastModified="{Date}2020-10-15T11:59:54.068-07:00"
-                adventureType="Overnight Trip"
-                adventureType_x0040_LastModified="{Date}2020-10-15T11:59:54.067-07:00"/>
+                adventureType_x0040_LastModified="{Date}2021-06-28T10:23:01.684-07:00"
+                tags="[wknd:customer-journey/attract]"
+                tags_x0040_LastModified="{Date}2021-06-28T10:23:01.683-07:00"/>
         </data>
         <metadata
             jcr:mixinTypes="[cq:Taggable]"
