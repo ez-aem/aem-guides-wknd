@@ -4,6 +4,11 @@
 
 ![](design.png)
 
+## Changes to WKND
+
+1. Added `App` CFM.
+2. Added `tags` property to `Adventure` CFM.
+3. Updated `Downhill Skiing in Jackson Hole` CF with `wknd:customer-journey/attract` tag to support featured query.
 
 ## GraphQL Queries
 
@@ -70,37 +75,45 @@ The home screen consists of a single GraphQL query that searches across two Cont
   }
 ```
 
-TODO:
-* [] Page title: WKND Adventures
-* [] Hero image
-* [] Sub heading: Our Adventures
+**Assumptions:**
+* Page title, _WKND Adventures_, is re-used from the home page query (i.e `app.appTitle`)
+* Hero image is re-used from the home page query (i.e. `app.appHeroImage`)
+* Sub heading, _Our Adventures_, is hard coded in the app.
 
-### Screen 3
+### Screen 3: Detail Page
+
+The detail page uses a _ByPath_ query and supports a path variable.
 
 ```
-  {
-    adventureList {
-      items {
-        _path
-        adventureTitle
-        adventureDescription {
-          html
-        }
-        adventurePrimaryImage {
-          ... on ImageRef {
-            _path
-            width
-            height
-          }
+query findAdventureByPath($apath: String!) {
+
+  adventureByPath(
+    _path: $apath
+  ) {
+    item {
+      _path
+      adventureTitle
+      adventureDescription {
+        html
+      }
+      adventurePrimaryImage {
+        ... on ImageRef {
+          _path
+          width
+          height
         }
       }
     }
   }
+}
+
+{
+  "apath": "/content/dam/wknd/en/adventures/downhill-skiing-wyoming/downhill-skiing-wyoming"
+}
 ```
 
 TODO:
-* [] Event List
-  * [] Event
+* [ ] Event List
 
 ## Persisted Queries
 
