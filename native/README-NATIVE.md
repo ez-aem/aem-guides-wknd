@@ -109,15 +109,15 @@ query findAdventureByPath($apath: String!) {
 ```
 
 **Parameters**
+```
 {
   "apath": "/content/dam/wknd/en/adventures/downhill-skiing-wyoming/downhill-skiing-wyoming"
 }
 ```
 
-TODO:
-* [ ] Event List
-
 ## Persisted Queries
+
+The following section contains the Persisted Queries. At the time of this writing, the Persisted Queries are identical to the corresponding GraphQL queries above.
 
 ### Screen 1 - Home
 
@@ -132,6 +132,8 @@ $ curl -s -u admin:admin http://localhost:4502/graphql/execute.json/wknd/native-
 ```
 
 ### Screen 3 - Detail Page
+
+**Note: The `apath` parameter defines the Adventure path.**
 
 ```
 $ curl -s -u admin:admin http://localhost:4502/graphql/execute.json/wknd/native-app-adventure%3bapath=/content/dam/wknd/en/adventures/downhill-skiing-wyoming/downhill-skiing-wyoming
