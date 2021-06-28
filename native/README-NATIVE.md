@@ -55,24 +55,24 @@ The home screen consists of a single GraphQL query that searches across two Cont
 ### Screen 2 - Adventure List
 
 ```
-  {
-    adventureList {
-      items {
-        _path
-        adventureTitle
-        adventureDescription {
-          html
-        }
-        adventurePrimaryImage {
-          ... on ImageRef {
-            _path
-            width
-            height
-          }
+{
+  adventureList {
+    items {
+      _path
+      adventureTitle
+      adventureDescription {
+        html
+      }
+      adventurePrimaryImage {
+        ... on ImageRef {
+          _path
+          width
+          height
         }
       }
     }
   }
+}
 ```
 
 **Assumptions:**
@@ -106,7 +106,9 @@ query findAdventureByPath($apath: String!) {
     }
   }
 }
+```
 
+**Parameters**
 {
   "apath": "/content/dam/wknd/en/adventures/downhill-skiing-wyoming/downhill-skiing-wyoming"
 }
@@ -120,19 +122,17 @@ TODO:
 ### Screen 1 - Home
 
 ```
-TODO
+$ curl -s -u admin:admin http://localhost:4502/graphql/execute.json/wknd/native-app-home 
 ```
 
 ### Screen 2 - Adventure List
 
-An out of the box PQ is included that contains most of the required page data. The same assumptions used in the GraphQL section apply here.
-
 ```
-$ curl -u admin:admin http://localhost:4502/graphql/execute.json/wknd/adventures-all
+$ curl -s -u admin:admin http://localhost:4502/graphql/execute.json/wknd/native-app-adventures
 ```
 
 ### Screen 3 - Detail Page
 
 ```
-TODO
+$ curl -s -u admin:admin http://localhost:4502/graphql/execute.json/wknd/native-app-adventure%3bapath=/content/dam/wknd/en/adventures/downhill-skiing-wyoming/downhill-skiing-wyoming
 ```
