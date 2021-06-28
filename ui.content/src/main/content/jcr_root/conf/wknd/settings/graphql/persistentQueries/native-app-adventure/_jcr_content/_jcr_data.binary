@@ -1,0 +1,21 @@
+query findAdventureByPath($apath: String!) {
+
+  adventureByPath(
+    _path: $apath
+  ) {
+    item {
+      _path
+      adventureTitle
+      adventureDescription {
+        html
+      }
+      adventurePrimaryImage {
+        ... on ImageRef {
+          _path
+          width
+          height
+        }
+      }
+    }
+  }
+}

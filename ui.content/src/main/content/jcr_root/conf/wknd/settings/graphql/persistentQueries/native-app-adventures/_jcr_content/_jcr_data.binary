@@ -1,0 +1,18 @@
+{
+  adventureList {
+    items {
+      _path
+      adventureTitle
+      adventureDescription {
+        html
+      }
+      adventurePrimaryImage {
+        ... on ImageRef {
+          _path
+          width
+          height
+        }
+      }
+    }
+  }
+}

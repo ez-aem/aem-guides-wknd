@@ -1,0 +1,30 @@
+{
+  appByPath(_path: "/content/dam/wknd/en/app/wknd-adventures") {
+    item {
+      _path
+      appTitle
+      appHeroImage {
+        ... on ImageRef {
+          _path
+          width
+          height
+        }
+      }
+    }
+  }
+  adventureList(
+    filter: {tags: {_expressions: [{value: "wknd:customer-journey/attract", _operator: EQUALS}]}}
+  ) {
+    items {
+      _path
+      adventureTitle
+      adventurePrimaryImage {
+        ... on ImageRef {
+          _path
+          width
+          height
+        }
+      }
+    }
+  }
+}
